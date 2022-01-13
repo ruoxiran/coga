@@ -93,8 +93,9 @@ var respecConfig = {
   // errata: 'http://www.w3.org/2010/02/rdfa/errata.html',
 
   // name of the WG
-  wgPatentPolicy: "PP2020",
+
   group: ["ag", "apa"],
+  wgPatentPolicy: "PP2020",
 
   maxTocLevel: 3,
 
