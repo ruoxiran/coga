@@ -1,0 +1,61 @@
+name: CI
+on:
+  pull_request: {}
+  push:
+    branches: [main]
+jobs:
+  main:
+    name: Build, Validate and Deploy
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: content-usable/index.html
+          DESTINATION: content-usable/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_WEBIDL: false
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: extension/index.html
+          DESTINATION: extension/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_WEBIDL: false
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: issue-papers/index.html
+          DESTINATION: issue-papers/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_WEBIDL: false
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: techniques/index.html
+          DESTINATION: techniques/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_WEBIDL: false
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: user-research/index.html
+          DESTINATION: user-research/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_WEBIDL: false
+          VALIDATE_MARKUP: false
+      - uses: w3c/spec-prod@v2
+        with:
+          SOURCE: persona/index.html
+          DESTINATION: persona/index.html
+          TOOLCHAIN: respec
+          GH_PAGES_BRANCH: gh-pages
+          VALIDATE_WEBIDL: false
+          VALIDATE_MARKUP: false
+
+      
