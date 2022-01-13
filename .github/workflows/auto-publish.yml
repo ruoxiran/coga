@@ -16,7 +16,7 @@ jobs:
           VALIDATE_MARKUP: false
           SOURCE: content-usable/index.html
           DESTINATION: content-usable/index.html
-          TOOLCHAIN: bikeshed
+          TOOLCHAIN: respec
       - uses: w3c/spec-prod@v2
         with:
           GH_PAGES_BRANCH: gh-pages
@@ -24,7 +24,7 @@ jobs:
           VALIDATE_MARKUP: false
           SOURCE: extension/index.html
           DESTINATION: extension/index.html
-          TOOLCHAIN: bikeshed
+          TOOLCHAIN: respec
       - uses: w3c/spec-prod@v2
         with:
           GH_PAGES_BRANCH: gh-pages
@@ -32,7 +32,7 @@ jobs:
           VALIDATE_MARKUP: false
           SOURCE: issue-papers/index.html
           DESTINATION: issue-papers/index.html
-          TOOLCHAIN: bikeshed
+          TOOLCHAIN: respec
       - uses: w3c/spec-prod@v2
         with:
           GH_PAGES_BRANCH: gh-pages
@@ -40,7 +40,7 @@ jobs:
           VALIDATE_MARKUP: false
           SOURCE: techniques/index.html
           DESTINATION: techniques/index.html
-          TOOLCHAIN: bikeshed
+          TOOLCHAIN: respec
       - uses: w3c/spec-prod@v2
         with:
           GH_PAGES_BRANCH: gh-pages
@@ -48,7 +48,7 @@ jobs:
           VALIDATE_MARKUP: false
           SOURCE: user-research/index.html
           DESTINATION: user-research/index.html
-          TOOLCHAIN: bikeshed
+          TOOLCHAIN: respec
       - uses: w3c/spec-prod@v2
         with:
           GH_PAGES_BRANCH: gh-pages
@@ -56,7 +56,7 @@ jobs:
           VALIDATE_MARKUP: false
           SOURCE: persona/index.html
           DESTINATION: persona/index.html
-          TOOLCHAIN: bikeshed
+          TOOLCHAIN: respec
           
 
       
